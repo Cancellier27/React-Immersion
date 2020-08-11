@@ -1,7 +1,8 @@
-import React from 'react'
-import Menu from '../Menu'
-import Footer from '../Footer'
-import styled from 'styled-components'
+/* eslint-disable linebreak-style */
+import React from 'react';
+import styled from 'styled-components';
+import Menu from '../Menu';
+import Footer from '../Footer';
 
 const Main = styled.main`
   background-color: var(--black);
@@ -21,7 +22,7 @@ function PageDefault({ children }) {
       </Main>
       <Footer />
     </>
-  )
+  );
 }
 
-export default PageDefault
+export default PageDefault;

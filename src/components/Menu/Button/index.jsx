@@ -1,5 +1,6 @@
-import styled from 'styled-components'
-import { Link } from 'react-router-dom'
+/* eslint-disable linebreak-style */
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 const Button = styled(Link)`
   color: var(--white);
@@ -20,6 +21,5 @@ const Button = styled(Link)`
 &:focus {
   opacity: .5;
 }
-`
-
-export default Button
+`;
+export default Button;

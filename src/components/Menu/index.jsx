@@ -1,9 +1,10 @@
-import React from 'react'
+/* eslint-disable linebreak-style */
+import React from 'react';
 
-import { Link } from 'react-router-dom'
-import Logo from '../../assets/img/FIFLIX.png'
-import './Menu.css'
-import Button from './Button'
+import { Link } from 'react-router-dom';
+import Logo from '../../assets/img/FIFLIX.png';
+import './Menu.css';
+import Button from './Button';
 
 function Menu() {
   return (
@@ -12,11 +13,11 @@ function Menu() {
         <img className="Logo" src={Logo} alt="FIFLIX" />
       </Link>
 
-    <Button as={Link} className="ButtonLink" to="/cadastro/video" >
-      New Video     
-    </Button>
+      <Button as={Link} className="ButtonLink" to="/cadastro/video">
+        New Video
+      </Button>
     </nav>
-  )
+  );
 }
 
-export default Menu
+export default Menu;
