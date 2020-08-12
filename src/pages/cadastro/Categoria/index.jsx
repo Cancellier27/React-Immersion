@@ -56,7 +56,7 @@ function CadastroCategoria() {
 
         <FormField
           label="Descrição"
-          type="????"
+          type="textarea"
           name="descricao"
           value={values.descricao}
           onChange={handleChange}
