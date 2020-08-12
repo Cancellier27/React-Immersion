@@ -26,10 +26,30 @@ const Input = styled.input`
   &:focus {
     border-bottom-color: var(--primary)
   }
+
+  &:focus::not(type=) + span {
+
+  }
 `;
 
 const Label = styled.label``;
-Label.Text = styled.span``;
+Label.Text = styled.span`
+  color: #E5E5E5;
+  height: 57px;
+  position: absolute;
+  top: 0;
+  left: 16px;
+
+  display: flex;
+  align-items: center;
+
+  transform-origin: 0% 0%;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+
+  transition: .1s ease-in-out;
+`;
 
 const FormFieldWrapper = styled.div`
   position: relative;
@@ -54,11 +74,6 @@ function FormField({
       <Label
         htmlFor={fieldId}
       >
-        <Label.Text>
-
-          {label}
-
-        </Label.Text>
 
         <Input
           as={tag}
@@ -66,8 +81,13 @@ function FormField({
           name={name}
           value={value}
           onChange={onChange}
-          placeholder={label}
         />
+
+        <Label.Text>
+
+          {label}
+
+        </Label.Text>
 
       </Label>
     </FormFieldWrapper>
