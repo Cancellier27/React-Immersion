@@ -5,6 +5,7 @@ import PageDefault from '../../../components/pageDefault';
 import FormField from '../../../components/FormFields';
 import Button from '../../../components/Menu/Button';
 import Loading from './Loading';
+import './categoria.css';
 
 function CadastroCategoria() {
   const valoresIniciais = {
@@ -31,14 +32,16 @@ function CadastroCategoria() {
   }
 
   useEffect(() => {
-    const URL_TOP = 'http://localhost:8080/categorias';
-    fetch(URL_TOP)
-      .then(async (serverAnswer) => {
-        const answer = await serverAnswer.json();
-        setCategorias([
-          ...answer,
-        ]);
-      });
+    setTimeout(() => {
+      const URL_TOP = 'http://localhost:8080/categorias';
+      fetch(URL_TOP)
+        .then(async (serverAnswer) => {
+          const answer = await serverAnswer.json();
+          setCategorias([
+            ...answer,
+          ]);
+        });
+    }, 3000);
 
     // setTimeout(() => {
     //   setCategorias([
@@ -63,7 +66,7 @@ function CadastroCategoria() {
     <PageDefault>
       <h1>
         Cadastro de Categoria:
-        { ` ${values.nome}` }
+        {` ${values.nome}`}
       </h1>
 
       <form onSubmit={function handleSubmit(infosDoEvento) {
@@ -108,7 +111,7 @@ function CadastroCategoria() {
 
       {categorias.length === 0 && <Loading />}
 
-      <ul>
+      <ul className="categoriesUlist">
         {categorias.map((categoria) => (
           <li key={`${categoria.nome}`}>
             {categoria.nome}

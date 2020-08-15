@@ -1,68 +1,98 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h3 align="center">
+    <img alt="Logo" title="#logo" width="300px" src="./src/assets/img/FIFLIX.png">
+    <br><br>
+    <b>Something that really remember Netflix</b> 
+</h3>
 
-## Available Scripts
+<p align="center">
+  <a href="https://www.linkedin.com/in/filipe-cancellier-da-costa-8459ab160/">
+    <img alt="Made by Filipe" src="https://img.shields.io/badge/made%20by-sanderdsz-%2304D361">
+  </a>
 
-In the project directory, you can run:
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/sanderdsz/ecoleta?color=%2304D361">
 
-### `yarn start`
+  <img alt="Mobile" src="https://img.shields.io/badge/mobile-react--native-blue">
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  <img alt="Frontend" src="https://img.shields.io/badge/web-react-blueviolet">
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+  <img alt="Backend" src="https://img.shields.io/badge/backend-node.js-green">
+</p>
 
-### `yarn test`
+## :computer: Web
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<h1 align="center">
+    <img alt="Web" src=".github/logo.png" width="650px">
+</h1>
 
-### `yarn build`
+## :iphone: Mobile
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<h1 align="center">
+    <img alt="Mobile Home" src=".github/Home.png" width="300px">
+    <img alt="Mobile Detail" src=".github/Detail.svg" width="300px">
+</h1>
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## :bookmark: About
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The <strong>Ecoleta</strong> is a web and mobile app made to help our community to share and find recycle locations.
 
-### `yarn eject`
+## :rocket: Tech Used
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+This project was made with the following technologies:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [TypeScript](https://www.typescriptlang.org/)
+- [Node.js](https://nodejs.org/en/)
+- [ReactJS](https://reactjs.org/)
+- [React Native](https://reactnative.dev/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## :fire: How to
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- ### **Requirements**
 
-## Learn More
+  - It's **necessary** **[Node.js](https://nodejs.org/en/)**
+  - You, **need** a package manager like **[NPM](https://www.npmjs.com/)** or **[Yarn](https://yarnpkg.com/)**.
+  - Then, it's **essencial** install **[Expo](https://expo.io/)**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone the repo :
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```sh
+  $ git clone https://github.com/sanderdsz/ecoleta.git
+```
 
-### Code Splitting
+2. Execute the app:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+```sh
+  # Install all dependencies
+  $ npm install
 
-### Analyzing the Bundle Size
+  # Start the server API
+  $ cd ./sources/server
+  $ npm run dev
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+  # Run database seeds and migrations
+  $ npm run knex:migrate
+  $ npm run knex:seed
 
-### Making a Progressive Web App
+  # Start the web application
+  $ cd ./sources/web
+  $ npm start
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+  # Start the mobile application
+  $ cd ./sources/mobile
+  $ npm start
+```
 
-### Advanced Configuration
+## :memo: License
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+This project is under MIT license. [LICENSE](LICENSE.md)
 
-### Deployment
+## :mailbox_with_mail: Get in touch!
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<a href="https://sanderzuchinalli.netlify.app/" target="_blank" >
+  <img alt="Website - Sander Zuchinalli" src="https://img.shields.io/badge/Website--%23F8952D?style=social">
+</a>&nbsp;&nbsp;&nbsp;
+<a href="https://www.linkedin.com/in/sandersz/" target="_blank" >
+  <img alt="Linkedin - Sander Zuchinalli" src="https://img.shields.io/badge/Linkedin--%23F8952D?style=social&logo=linkedin">
+</a>&nbsp;&nbsp;&nbsp;
+<a href="mailto:sanderdsz@gmail.com" target="_blank" >
+  <img alt="Email - Sander Zuchinalli" src="https://img.shields.io/badge/Email--%23F8952D?style=social&logo=gmail">
+</a>
