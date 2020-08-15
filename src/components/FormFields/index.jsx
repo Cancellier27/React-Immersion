@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const Input = styled.input`
   background: #53585D;
@@ -16,8 +16,8 @@ const Input = styled.input`
   border-top: 4px solid transparent;
   border-bottom: 4px solid #53585D;
 
-  padding: 16px;
-  margin-bottom: 4px;
+  padding: 16px 16px;
+  margin-bottom: 45px;
 
   resize: none;
   border-radius: 4px;
@@ -27,8 +27,25 @@ const Input = styled.input`
     border-bottom-color: var(--primary)
   }
 
-  &:focus::not(type=) + span {
+  &:focus:not([type="color"]) + span {
+    transform: scale(.6) translateY(-10px);
+  }
 
+  ${({ hasValue }) => hasValue && css`
+      &:not([type="color"]) + span {
+        transform: scale(.6) translateY(-10px);
+      }
+    `}
+`;
+
+const FormFieldWrapper = styled.div`
+  position: relative;
+  textarea {
+    min-height: 150px;
+  }
+
+  input[type="color"] {
+    padding-left: 56px;
   }
 `;
 
@@ -51,23 +68,14 @@ Label.Text = styled.span`
   transition: .1s ease-in-out;
 `;
 
-const FormFieldWrapper = styled.div`
-  position: relative;
-  textarea {
-    min-height: 150px;
-  }
-
-  input[type="color"] {
-    padding-left: 56px;
-  }
-`;
-
 function FormField({
   label, type, name, value, onChange,
 }) {
   const fieldId = `id_${name}`;
   const isTextarea = type === 'textarea';
   const tag = isTextarea ? 'textarea' : 'input';
+
+  const hasValue = Boolean(value.length);
 
   return (
     <FormFieldWrapper>
@@ -80,6 +88,7 @@ function FormField({
           type={type}
           name={name}
           value={value}
+          hasValue={hasValue}
           onChange={onChange}
         />
 
