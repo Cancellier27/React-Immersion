@@ -6,16 +6,13 @@
 
 <p align="center">
   <a href="https://www.linkedin.com/in/filipe-cancellier-da-costa-8459ab160/">
-    <img alt="Made by Filipe" src="https://img.shields.io/badge/made%20by-sanderdsz-%2304D361">
+    <img alt="Made by Filipe" src="https://img.shields.io/badge/made%20by-Filipe-brightgreen">
   </a>
 
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/sanderdsz/ecoleta?color=%2304D361">
+  <img alt="GitHub language count" src="https://img.shields.io/badge/languages-3-brightgreen">
 
-  <img alt="Mobile" src="https://img.shields.io/badge/mobile-react--native-blue">
+  <img alt="Web" src="https://img.shields.io/badge/web-React-blue">
 
-  <img alt="Frontend" src="https://img.shields.io/badge/web-react-blueviolet">
-
-  <img alt="Backend" src="https://img.shields.io/badge/backend-node.js-green">
 </p>
 
 ## :computer: Web
@@ -24,25 +21,25 @@
     <img alt="Web" src=".github/logo.png" width="650px">
 </h1>
 
-## :iphone: Mobile
+<!-- ## :iphone: Mobile
 
 <h1 align="center">
     <img alt="Mobile Home" src=".github/Home.png" width="300px">
     <img alt="Mobile Detail" src=".github/Detail.svg" width="300px">
-</h1>
+</h1> -->
 
 ## :bookmark: About
 
-The <strong>Ecoleta</strong> is a web and mobile app made to help our community to share and find recycle locations.
+The <strong>FIFLIX</strong> is a web app made having as inspiration the website Netflix, but using videos that are my favorites taken from the web.
 
 ## :rocket: Tech Used
 
 This project was made with the following technologies:
 
-- [TypeScript](https://www.typescriptlang.org/)
+<!-- - [TypeScript](https://www.typescriptlang.org/) -->
 - [Node.js](https://nodejs.org/en/)
 - [ReactJS](https://reactjs.org/)
-- [React Native](https://reactnative.dev/)
+<!-- - [React Native](https://reactnative.dev/) -->
 
 ## :fire: How to
 
@@ -50,35 +47,24 @@ This project was made with the following technologies:
 
   - It's **necessary** **[Node.js](https://nodejs.org/en/)**
   - You, **need** a package manager like **[NPM](https://www.npmjs.com/)** or **[Yarn](https://yarnpkg.com/)**.
-  - Then, it's **essencial** install **[Expo](https://expo.io/)**
+  <!-- - Then, it's **essencial** install **[Expo](https://expo.io/)** -->
 
 1. Clone the repo :
 
 ```sh
-  $ git clone https://github.com/sanderdsz/ecoleta.git
+  $ git clone https://github.com/Cancellier27/React-Immersion
 ```
 
 2. Execute the app:
 
 ```sh
   # Install all dependencies
-  $ npm install
+  $ npm install 
 
   # Start the server API
-  $ cd ./sources/server
+  $ cd /React-Immersion
   $ npm run dev
 
-  # Run database seeds and migrations
-  $ npm run knex:migrate
-  $ npm run knex:seed
-
-  # Start the web application
-  $ cd ./sources/web
-  $ npm start
-
-  # Start the mobile application
-  $ cd ./sources/mobile
-  $ npm start
 ```
 
 ## :memo: License
@@ -87,12 +73,12 @@ This project is under MIT license. [LICENSE](LICENSE.md)
 
 ## :mailbox_with_mail: Get in touch!
 
-<a href="https://sanderzuchinalli.netlify.app/" target="_blank" >
-  <img alt="Website - Sander Zuchinalli" src="https://img.shields.io/badge/Website--%23F8952D?style=social">
+<a href="https://filipe-site.now.sh/" target="_blank" >
+  <img alt="Website - Filipe" src="https://img.shields.io/badge/Website--%23F8952D?style=social">
 </a>&nbsp;&nbsp;&nbsp;
-<a href="https://www.linkedin.com/in/sandersz/" target="_blank" >
-  <img alt="Linkedin - Sander Zuchinalli" src="https://img.shields.io/badge/Linkedin--%23F8952D?style=social&logo=linkedin">
+<a href="https://www.linkedin.com/in/filipe-cancellier-da-costa-8459ab160/" target="_blank" >
+  <img alt="Linkedin - Filipe" src="https://img.shields.io/badge/Linkedin--%23F8952D?style=social&logo=linkedin">
 </a>&nbsp;&nbsp;&nbsp;
-<a href="mailto:sanderdsz@gmail.com" target="_blank" >
-  <img alt="Email - Sander Zuchinalli" src="https://img.shields.io/badge/Email--%23F8952D?style=social&logo=gmail">
+<a href="mailto:filipecancelliercosta@gmail.com" target="_blank" >
+  <img alt="Email - Filipe" src="https://img.shields.io/badge/Email--%23F8952D?style=social&logo=gmail">
 </a>
