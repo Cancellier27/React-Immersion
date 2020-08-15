@@ -1,9 +1,10 @@
 /* eslint-disable linebreak-style */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/pageDefault';
 import FormField from '../../../components/FormFields';
 import Button from '../../../components/Menu/Button';
+import Loading from './Loading';
 
 function CadastroCategoria() {
   const valoresIniciais = {
@@ -28,6 +29,35 @@ function CadastroCategoria() {
       infosDoEvento.target.value,
     );
   }
+
+  useEffect(() => {
+    const URL_TOP = 'http://localhost:8080/categorias';
+    fetch(URL_TOP)
+      .then(async (serverAnswer) => {
+        const answer = await serverAnswer.json();
+        setCategorias([
+          ...answer,
+        ]);
+      });
+
+    // setTimeout(() => {
+    //   setCategorias([
+    //     ...categorias,
+    //     {
+    //       id: 1,
+    //       nome: 'front End',
+    //       descricao: 'Uma categoria legal',
+    //       cor: '#cdb1ff',
+    //     },
+    //     {
+    //       id: 2,
+    //       nome: 'Back End',
+    //       descricao: 'Uma categoria Nao tao legal',
+    //       cor: '#cdb1ff',
+    //     },
+    //   ]);
+    // }, 2000);
+  }, []);
 
   return (
     <PageDefault>
@@ -75,6 +105,8 @@ function CadastroCategoria() {
         </Button>
 
       </form>
+
+      {categorias.length === 0 && <Loading />}
 
       <ul>
         {categorias.map((categoria) => (

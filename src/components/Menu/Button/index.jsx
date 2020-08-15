@@ -1,10 +1,10 @@
 /* eslint-disable linebreak-style */
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 
-const Button = styled(Link)`
+const Button = styled.button`
   color: var(--white);
   border: 1px solid var(--white);
+  background: var(--black);
   box-sizing: border-box;
   cursor: pointer;
   padding: 16px 24px;
@@ -16,10 +16,9 @@ const Button = styled(Link)`
   text-decoration: none;
   display: inline-block;
   transition: opacity .3s;
-
-&:hover,
-&:focus {
-  opacity: .5;
-}
+  &:hover,
+  &:focus {
+    opacity: .5;
+  }
 `;
 export default Button;
