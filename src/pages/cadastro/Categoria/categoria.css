@@ -1,4 +1,30 @@
 .categoriesUlist {
+  margin: 0;
+  padding: 0;
+
+  margin-left: 10px;
   margin-top: 30px;
-  list-style-type: none;  
+  list-style-type: none;
+}
+
+.categoriesUlist li {
+  padding: 0;
+  margin: 0;
+  margin: 4px 0;
+  font-size: 1.1em;
+}
+
+.backHomeButton {
+  margin: 20px 10px 10px 0px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white ;
+  border-radius: 5px;
+  width: 150px;
+  height: 40px;
+  text-decoration: none;
+
 }

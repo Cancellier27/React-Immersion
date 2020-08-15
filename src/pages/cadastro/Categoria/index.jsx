@@ -6,6 +6,7 @@ import FormField from '../../../components/FormFields';
 import Button from '../../../components/Menu/Button';
 import Loading from './Loading';
 import './categoria.css';
+import useForm from '../../../hooks/useForm';
 
 function CadastroCategoria() {
   const valoresIniciais = {
@@ -14,26 +15,15 @@ function CadastroCategoria() {
     cor: '',
   };
 
+  const { handleChange, values, clearForm } = useForm(valoresIniciais);
+
   const [categorias, setCategorias] = useState([]);
-  const [values, setValues] = useState(valoresIniciais);
-
-  function setValue(chave, valor) {
-    setValues({
-      ...values,
-      [chave]: valor,
-    });
-  }
-
-  function handleChange(infosDoEvento) {
-    setValue(
-      infosDoEvento.target.getAttribute('name'),
-      infosDoEvento.target.value,
-    );
-  }
 
   useEffect(() => {
     setTimeout(() => {
-      const URL_TOP = 'http://localhost:8080/categorias';
+      const URL_TOP = window.location.hostname.includes('localhost')
+        ? 'http://localhost:8080/categorias'
+        : 'https://fiflix.herokuapp.com/categorias';
       fetch(URL_TOP)
         .then(async (serverAnswer) => {
           const answer = await serverAnswer.json();
@@ -42,24 +32,6 @@ function CadastroCategoria() {
           ]);
         });
     }, 3000);
-
-    // setTimeout(() => {
-    //   setCategorias([
-    //     ...categorias,
-    //     {
-    //       id: 1,
-    //       nome: 'front End',
-    //       descricao: 'Uma categoria legal',
-    //       cor: '#cdb1ff',
-    //     },
-    //     {
-    //       id: 2,
-    //       nome: 'Back End',
-    //       descricao: 'Uma categoria Nao tao legal',
-    //       cor: '#cdb1ff',
-    //     },
-    //   ]);
-    // }, 2000);
   }, []);
 
   return (
@@ -76,7 +48,7 @@ function CadastroCategoria() {
           values,
         ]);
 
-        setValues(valoresIniciais);
+        clearForm();
       }}
       >
 
@@ -113,14 +85,14 @@ function CadastroCategoria() {
 
       <ul className="categoriesUlist">
         {categorias.map((categoria) => (
-          <li key={`${categoria.nome}`}>
-            {categoria.nome}
+          <li key={`${categoria.titulo}`}>
+            {categoria.titulo}
           </li>
         ))}
       </ul>
 
-      <Link to="/">
-        ir para Home
+      <Link to="/" className="backHomeButton">
+        Homepage
       </Link>
     </PageDefault>
   );
