@@ -8,7 +8,14 @@ import categoriasRepository from '../repositories/categorias';
 
 function Home() {
   useEffect(() => {
-    categoriasRepository.getAllWithVideos();
+    categoriasRepository.getAllWithVideos()
+      .then((categoriasComVideos) => {
+        console.log(categoriasComVideos);
+      })
+
+      .catch((err) => {
+        console.log(err.message);
+      });
   });
 
   return (

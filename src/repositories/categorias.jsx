@@ -4,11 +4,14 @@ import config from '../config';
 const URL_CATEGORIAS = `${config.URL_BACKEND_MAIN}/categorias`
 
 function getAllWithVideos() {
-  fetch(URL_CATEGORIAS)
+  return fetch(`${URL_CATEGORIAS}?_embed=videos`)
     .then(async (serverAnswer) => {
-      const answer = await serverAnswer.json();
+      if (serverAnswer.ok) {
+        const answer = await serverAnswer.json();
+        return answer;
+      }
 
-      return answer;
+      throw new Error('Unable to upload data');
     });
 }
 
