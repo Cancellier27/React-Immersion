@@ -240,6 +240,20 @@
       "url": "https://www.youtube.com/watch?v=GNm5drtAQXs",
       "categoriaId": 1,
       "id": 56
+    },
+    {
+      "titulo": "",
+      "url": "https://www.youtube.com/watch?v=GNm5drtAQXs",
+      "categoriaId": {
+        "id": 1,
+        "titulo": "Front End",
+        "cor": "#6BD1FF",
+        "link_extra": {
+          "text": "Formação de Front End na Alura",
+          "url": "https://www.alura.com.br/cursos-online-front-end"
+        }
+      },
+      "id": 57
     }
   ]
 }
