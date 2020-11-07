@@ -19,8 +19,8 @@ export default function useForm(valoresIniciais) {
   }
 
   function clearForm() {
-    return setValues(valoresIniciais)
-  };
+    return setValues(valoresIniciais);
+  }
 
   return {
     values,

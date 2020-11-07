@@ -1,5 +1,5 @@
 <h3 align="center">
-    <img alt="Logo" title="#logo" width="300px" src="./src/assets/img/FIFLIX.png">
+    <img alt="Logo" title="#logo" width="200px" src="./src/assets/img/FIFLIX.png">
     <br><br>
     <b>Something that really remember Netflix</b> 
 </h3>
@@ -67,9 +67,9 @@ This project was made with the following technologies:
 
 ```
 
-## :memo: License
+<!-- ## :memo: License
 
-This project is under MIT license. [LICENSE](LICENSE.md)
+This project is under MIT license. [LICENSE](LICENSE.md) -->
 
 ## :mailbox_with_mail: Get in touch!
 
